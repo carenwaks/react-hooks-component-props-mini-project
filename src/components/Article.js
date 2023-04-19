@@ -1,14 +1,14 @@
 import React from "react";
 
 
-function Article (props) {
-    return (
-      <article>
-        <h3>props.title</h3>
-        <small>props.date</small>
-        <p>props.preview</p>
-      </article>
-    )
+function Article ({title, date, preview}) {
+  return (
+    <article>
+      <h3>{title}</h3>
+      <small>{date}</small>
+      <p>{preview}</p>
+    </article>
+  );
 }
 
-export default Article
+export default Article;
